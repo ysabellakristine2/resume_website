@@ -45,23 +45,143 @@
     <!--layout container my beloved-->
     <div class="flex flex-col min-h-screen mb-20">
   
-            <!-- my name -->
+            <!--  title -->
             <h1 class="text-2xl text-center font-semibold mt-20">Portfolio</h1>
             <hr class="my-6 border-gray-800 w-3/4 mx-auto">
-            <button onclick="toggleSidebar()" class="text-white bg-gray-800 px-4 py-2 rounded hover:bg-gray-900">  Search Function </button>
-           
-</div>
-<!-- SIDEBAR -->
-<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-700 text-white transform -translate-x-full transition-transform duration-300 z-50">
-  <div class="p-4">
-    <h2 class="text-xl font-semibold mb-4">Sidebar Menu</h2>
-    <ul class="space-y-3">
-      <li><a href="#" class="hover:underline">Home</a></li>
-      <li><a href="#" class="hover:underline">Projects</a></li>
-      <li><a href="#" class="hover:underline">Contact</a></li>
-    </ul>
-  </div>
-</div>
+            <div class="flex justify-center gap-2 mb-8">
+                <button onclick="filterCards('all')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-red-500 hover:text-black transition ease-in-out duration-700">All</button>
+                <button onclick="filterCards('web')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-orange-400 hover:text-black transition ease-in-out duration-700">Web Development</button>
+                <button onclick="filterCards('design')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-yellow-400 hover:text-black transition ease-in-out duration-700">Graphic Design</button>
+                <button onclick="filterCards('others')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-green-400 hover:text-black transition ease-in-out duration-700">Others</button>
+            </div>
+            <!-- filter buttons -->
+
+
+            <!-- card grid -->
+            <div id="cardContainer" class="grid grid-cols-2 gap-6 mx-auto">
+                
+            <!-- start of cards -->
+            <!-- card 1 -->
+                <div class="card web max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Sample Website for Siquijor </h1>
+                        <p class ="font-normal"> HTML | Bootstrap CSS <br></p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> Showcased front end developmental skills to create a tourism website for Siquijor</p>
+                        <a href ="https://github.com/ysabellakristine/WEBSITE-FOR-SIQUIJOR" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                        <a href ="https://ysabellakristine.github.io/WEBSITE-FOR-SIQUIJOR/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Website </a>
+                </div>
+
+                <!-- card 2  -->
+                <div class="card web max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Burger Restaurant Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> Designed a dynamic menu page for a fictional burger restaurant with interactive ordering functionality using only vanilla JavaScript.</p>
+                        <a href ="https://github.com/ysabellakristine/metatton_burger" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                        <a href ="https://ysabellakristine.github.io/metatton_burger/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Website </a>
+                </div>
+
+                <!-- card 3  -->
+                <div class="card web max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Job Application Website </h1>
+                        <p class ="font-normal"> HTML | PHP | Basic CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> A website used to showcase PHP capability of adding a job application for both job users and HR users. Focuses more on PHP capability than design</p>
+                        <a href ="https://github.com/ysabellakristine/FINALS_EXAM_3RDYEAR" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+
+                <!-- card 4  -->
+                <div class="card web max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Google Docs Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | PHP | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> A website used to showcase PHP and vanilla JavaScript capability in creating a similar website to Google Docs.</p>
+                        <a href ="https://github.com/ysabellakristine/FINALS_EXAM_3RDYEAR" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+
+                <!-- card 5  -->
+                <div class="card web max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Resume Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> This resume website</p>
+                        <a href ="https://github.com/ysabellakristine2/resume_website" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+            <!-- card 6 -->
+                <div class="card design max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Straight to the Point Book</h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> A calculus book covering three topics. Input was made by groupmates but I designed it.</p>
+                    <a href ="https://www.canva.com/design/DAE3FYPuNi0/opA31mQHUVwKuKz5bZlmfg/edit?utm_content=DAE3FYPuNi0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Canva Page </a>
+                </div>
+            
+                <!-- card 7 -->
+                <div class="card design max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Prevent Teenage Pregnancy promotion materials</h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Promotion materials for the Facebook page to prevent Teenage Pregnancy</p>
+                    <a href ="https://www.canva.com/design/DAFE4LccLUE/921p_ax4NqWCIx5RssKYCw/edit?utm_content=DAFE4LccLUE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Poster </a>
+                    <a href ="https://www.canva.com/design/DAGpjWDPxYQ/0idMaEG49RyDgMjBi6Zs9w/edit?utm_content=DAGpjWDPxYQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">MAC </a>
+                </div>
+
+                <!-- card 8 -->
+                <div class="card design max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Intercultural Infographic </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Infographic explaining what Intercultural is. Written in Tagalog </p>
+                    <a href ="https://www.canva.com/design/DAFB37OHp2M/WKgtswrTuI_9-8ok4GMt6Q/edit?utm_content=DAFB37OHp2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 9 -->
+                <div class="card design max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Data Visualization Infographic </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Data Visualization for an example survey results. </p>
+                    <a href ="https://www.canva.com/design/DAE6uo-pyik/LzTmMmhxelGqK7rWJoGw1g/edit?utm_content=DAE6uo-pyik&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 10 -->
+                <div class="card design max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Pictorial Essay </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Pictorial Essay of how mental health is treated in varying countries. Written in Tagalog. </p>
+                    <a href ="https://www.canva.com/design/DAFFCZQ85uA/lbyeO2KEdCN1yPEMioe2dQ/edit?utm_content=DAFFCZQ85uA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 11 -->
+                <div class="card design others max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Digital Art </h1>
+                        <p class ="font-normal"> Pages of Digital Art <br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Collection of Digital Artwork </p>
+                    <a href ="https://www.tumblr.com/romero-ysabellakristine-b?source=share" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500 hover:text-white">1st Tumblr </a>
+                    <a href ="https://www.tumblr.com/blog/fandom-trash-426" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-600 hover:text-white">2nd Tumblr </a>
+                    <a href ="https://www.tumblr.com/blog/fandom-trash-426" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-purple-500 hover:text-white">Instagram </a>
+                </div>
+
+                <!-- card 12 -->
+                <div class="card others max-w-lg p-6 border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Facebook page links</h1>
+                        <p class ="font-normal"> Pages I was involved with<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <a href ="https://www.facebook.com/Prevent-Teenage-Pregnancy-Campaign-110810071670520/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Prevent Teenage Pregnancy</a>
+                    <a href ="https://www.facebook.com/profile.php?id=100081263620504" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">Bagong Kabataan, Bagong Kabanata </a>
+                    <a href ="https://www.facebook.com/laconic.riviere/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-orange-500">Laconic Riviere </a>
+                </div>
+
+        </div>
+    </div>
+
 
 
 
@@ -88,10 +208,16 @@
     </div>
 </footer>
 <script>
-    
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('-translate-x-full');
+
+function filterCards(category){
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)){
+            card.style.display = 'block';
+        } else{
+            card.style.display = 'none';
+        }
+    });
 }
 </script>
 </body>
